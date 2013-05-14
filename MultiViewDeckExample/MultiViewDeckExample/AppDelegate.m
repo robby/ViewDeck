@@ -37,7 +37,11 @@
                                                                                     leftViewController:secondDeckController];
     deckController.delegateMode = IIViewDeckDelegateAndSubControllers;
     
+//    UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:deckController];
+//    deckController.navigationControllerBehavior = IIViewDeckNavigationControllerIntegrated;
+//    self.window.rootViewController = navController;
     self.window.rootViewController = deckController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

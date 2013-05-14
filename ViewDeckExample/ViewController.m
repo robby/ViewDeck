@@ -70,11 +70,13 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [self.viewDeckController openLeftViewAnimated:NO];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self.viewDeckController closeLeftViewAnimated:YES];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -116,6 +118,7 @@
         picker.sourceType =  UIImagePickerControllerSourceTypeCamera;
 
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        [self.popoverController dismissPopoverAnimated:NO];
         self.popoverController = [[UIPopoverController alloc] initWithContentViewController:picker];
         [self.popoverController presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES]; 
     }
