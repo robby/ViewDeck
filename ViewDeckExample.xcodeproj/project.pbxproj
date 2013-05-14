@@ -26,6 +26,7 @@
 		E2955F9914B7D678003DDB4E /* NestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2955F9714B7D678003DDB4E /* NestViewController.xib */; };
 		E2B01A28155B385600E05FB9 /* PushedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B01A26155B385600E05FB9 /* PushedViewController.m */; };
 		E2B01A29155B385600E05FB9 /* PushedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2B01A27155B385600E05FB9 /* PushedViewController.xib */; };
+		E2DAC33216E7BFB8002BD487 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2DAC32F16E7BFB8002BD487 /* Default-568h@2x.png */; };
 		EA82B9FE167CFB670028F389 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA82B9FD167CFB670028F389 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		E2B01A25155B385600E05FB9 /* PushedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushedViewController.h; sourceTree = "<group>"; };
 		E2B01A26155B385600E05FB9 /* PushedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushedViewController.m; sourceTree = "<group>"; };
 		E2B01A27155B385600E05FB9 /* PushedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PushedViewController.xib; sourceTree = "<group>"; };
+		E2DAC32F16E7BFB8002BD487 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EA82B9FD167CFB670028F389 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 		E240A99C148AB3770077282A = {
 			isa = PBXGroup;
 			children = (
+				E2DAC32F16E7BFB8002BD487 /* Default-568h@2x.png */,
 				E240A9B1148AB3770077282A /* ViewDeckExample */,
 				E240A9AA148AB3770077282A /* Frameworks */,
 				E240A9A8148AB3770077282A /* Products */,
@@ -197,7 +200,7 @@
 		E240A99E148AB3770077282A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Adriaenssen BVBA";
 			};
 			buildConfigurationList = E240A9A1148AB3770077282A /* Build configuration list for PBXProject "ViewDeckExample" */;
@@ -229,6 +232,7 @@
 				E240A9EC148C51E00077282A /* bg.jpg in Resources */,
 				E2955F9914B7D678003DDB4E /* NestViewController.xib in Resources */,
 				E2B01A29155B385600E05FB9 /* PushedViewController.xib in Resources */,
+				E2DAC33216E7BFB8002BD487 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +275,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -284,6 +292,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
@@ -296,12 +305,17 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
